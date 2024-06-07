@@ -58,5 +58,17 @@
     "brackets": ["()", "[]", "{}"],
     "string_tokens": ["string"],
     "bracket_tokens": ["punctuation"]
+  },
+  "cpp": {
+    "quotes": ["'", "\""],
+    "brackets": ["()", "[]", "{}", "<>"],
+    "string_tokens": ["string", "template-string"],
+    "bracket_tokens": ["punctuation", "operator"]
+  },
+  "c": {
+    "quotes": ["'", "\""],
+    "brackets": ["()", "[]", "{}", "<>"],
+    "string_tokens": ["string", "template-string"],
+    "bracket_tokens": ["punctuation", "operator"]
   }
 }
