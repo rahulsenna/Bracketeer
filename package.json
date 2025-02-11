@@ -1,17 +1,17 @@
 {
-  "name": "bracketeer",
-  "displayName": "Bracketeer",
+  "name": "bracketeer-personal",
+  "displayName": "Bracketeer (Personal)",
   "description": "Easy manipulation with brackets and quotes",
-  "version": "1.3.1",
-  "publisher": "pustelto",
-  "homepage": "https://github.com/Pustelto/Bracketeer/blob/master/README.md",
+  "version": "1.3.2",
+  "publisher": "rahulsinha",
+  "homepage": "https://github.com/rahulsenna/Bracketeer/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Pustelto/Bracketeer"
+    "url": "https://github.com/rahulsenna/Bracketeer"
   },
   "license": "MIT",
   "engines": {
-    "vscode": "^1.50.0"
+    "vscode": "^1.66.0"
   },
   "categories": [
     "Other"
@@ -178,9 +178,8 @@
   "scripts": {
     "vscode:prepublish": "webpack --mode production",
     "release": "semantic-release",
-    "postinstall": "husky install && node ./node_modules/vscode/bin/install",
-    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
-    "test": "node ./node_modules/vscode/bin/test"
+    "compile": "tsc -p ./"
+
   },
   "devDependencies": {
     "@babel/core": "7.12.3",
@@ -199,7 +198,8 @@
     "semantic-release": "17.2.1",
     "semantic-release-vsce": "3.0.1",
     "typescript": "3.3.3",
-    "vscode": "1.1.33",
+	  "@vscode/test-electron": "^2.1.3",
+    "@types/vscode": "^1.66.0",
     "webpack": "5.2.0",
     "webpack-cli": "4.1.0"
   },
@@ -229,7 +229,7 @@
     }
   },
   "release": {
-    "repositoryUrl": "git@github.com:Pustelto/Bracketeer.git",
+    "repositoryUrl": "git@github.com:rahulsenna/Bracketeer.git",
     "branches": [
       "master",
       "next"
